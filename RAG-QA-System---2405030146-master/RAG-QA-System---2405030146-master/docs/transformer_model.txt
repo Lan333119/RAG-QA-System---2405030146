@@ -1,0 +1,25 @@
+Transformer模型是一种基于自注意力机制的深度学习架构，由Google团队在2017年的论文《Attention is All You Need》中提出。
+
+Transformer的核心组件包括：
+1. 多头注意力机制（Multi-Head Attention）
+2. 位置编码（Positional Encoding）
+3. 前馈神经网络（Feed-Forward Neural Network）
+4. 残差连接（Residual Connection）
+5. 层归一化（Layer Normalization）
+
+多头注意力机制允许模型同时关注输入序列的不同位置，每个头学习不同类型的注意力模式。位置编码为模型提供序列的顺序信息，因为Transformer本身是并行处理的，没有循环结构。
+
+Transformer架构分为编码器（Encoder）和解码器（Decoder）两部分：
+- 编码器：处理输入序列，生成上下文表示
+- 解码器：根据编码器输出和之前的输出生成新的序列
+
+Transformer的优势：
+- 并行计算能力强，训练速度快
+- 能够捕捉长距离依赖关系
+- 模型结构灵活，易于扩展
+
+基于Transformer的预训练模型如BERT、GPT、T5等已经成为NLP领域的基础模型，在各种任务上取得了state-of-the-art的成绩。
+
+BERT（Bidirectional Encoder Representations from Transformers）是一种双向预训练模型，能够学习到上下文相关的词表示。
+
+GPT（Generative Pre-trained Transformer）是一种自回归语言模型，擅长生成连贯的文本。
